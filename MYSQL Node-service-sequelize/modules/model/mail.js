@@ -8,15 +8,15 @@ async function config(toMail, subject,text){
    const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "snehatiwari972@gmail.com",
-            pass: "fkarhrshclskjweo"
+            user: "Your_User_Email",
+            pass: "Your_Password_without_space"
         }
     })
 
     // configure email content 
 
     const mailOptions = {
-        from :"snehatiwari972@gmail.com",
+        from :"Your_User_Email",
         to : toMail,
         subject: subject,
         text: text
@@ -32,9 +32,3 @@ async function config(toMail, subject,text){
 
 // sendMail();
 module.exports = config;
-
-// const config = {
-// emailUser: 'snehatiwari972@gmail.com',
-// emailPassword: 'fkarhrshclskjweo'
-// }
-// module.exports = config;
